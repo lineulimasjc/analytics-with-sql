@@ -21,19 +21,19 @@ CREATE TABLE Sales
      Salesperson VARCHAR(50)
   ); 
 
-
--- Insert Data
-INSERT INTO Sales (SalesDate, Product, Quantity, UnitValue, SalesPerson)
-VALUES ('2023-11-01', 'Produto A', 10, 100.00, 'Zico'),
-    ('2023-11-01', 'Produto B', 5, 200.00, 'Romário'),
-    ('2023-11-02', 'Produto A', 7, 100.00, 'Ronaldo'),
-    ('2023-11-02', 'Produto C', 3, 150.00, 'Bebeto'),
-    ('2023-11-03', 'Produto B', 8, 200.00, 'Romário'),
-    ('2023-11-03', 'Produto A', 5, 100.00, 'Zico'),
-    ('2023-11-04', 'Produto C', 10, 150.00, 'Bebeto'),
-    ('2023-11-04', 'Produto A', 2, 100.00, 'Ronaldo'),
-    ('2023-11-05', 'Produto B', 6, 200.00, 'Romário'),
-    ('2023-11-05', 'Produto C', 4, 150.00, 'Bebeto');
+-- Insert data
+INSERT INTO Sales
+            (Salesdate,Product,Quantity,Unitvalue,Salesperson)
+VALUES      ('2024-11-01','Product A',10,100.00,'John'),
+            ('2024-10-01','Product B',6,200.00,'Susan'),
+            ('2024-10-02','Product A',8,100.00,'David'),
+            ('2024-10-02','Product C',4,150.00,'Jennifer'),
+            ('2024-10-03','Product B',9,200.00,'Susan'),
+            ('2024-10-03','Product A',6,100.00,'John'),
+            ('2024-10-04','Product C',11,150.00,'Jennifer'),
+            ('2024-10-04','Product A',3,100.00,'David'),
+            ('2024-10-05','Product B',7,200.00,'Susan'),
+            ('2024-10-05','Product C',3,150.00,'Jennifer'); 
 '''
 st.code(code, language="sql")
 
