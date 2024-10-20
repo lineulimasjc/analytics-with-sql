@@ -1,3 +1,3 @@
 import streamlit as st
 
-st.write('SQL Fundamentals')
+st.title('SQL Fundamentals')
