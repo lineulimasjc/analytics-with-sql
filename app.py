@@ -5,6 +5,7 @@ st.set_page_config(
     page_icon="🔢", #📜📄
 )
 
+home = st.Page("pages/home.py", title="Home", icon="🏡")
 getting_started = st.Page("pages/getting-started.py", title="Getting Started", icon="🚀")
 sql_fundamentals = st.Page("pages/sql-fundamentals.py", title="SQL Fundamentals", icon="🧱")
 joins = st.Page("pages/joins.py", title="Table Join", icon="🤝")
@@ -12,7 +13,8 @@ aggregation = st.Page("pages/aggregation.py", title="Aggregation", icon="➕")
 
 pg = st.navigation(
     {
-        "Data Analysis with SQL": [getting_started,
+        "Data Analysis with SQL": [home,
+                                    getting_started,
                                    sql_fundamentals,
                                    joins,
                                    aggregation
