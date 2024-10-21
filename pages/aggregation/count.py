@@ -105,11 +105,48 @@ st.subheader('Business Questions:', anchor=False)
 
 st.write('###')
 
-st.write(':blue[1. Question?]')
+st.write(':blue[1. Retrieve all customers]')
 
 with st.expander("View suggested solution"):
     code = '''
+    SELECT * 
+	FROM Customers;
+    '''
+    st.code(code, language="sql")
 
+st.write('###')
+
+
+st.write(':blue[2. Count all customers]')
+
+with st.expander("View suggested solution"):
+    code = '''
+	SELECT COUNT(*) 
+	FROM Customers;
+    '''
+    st.code(code, language="sql")
+
+st.write('###')
+
+
+st.write(':blue[3. Count customers]')
+
+with st.expander("View suggested solution"):
+    code = '''
+	SELECT COUNT(id_cust)
+	FROM Customers;
+    '''
+    st.code(code, language="sql")
+
+st.write('###')
+
+
+st.write(':blue[4. Count customers by city (Is this query incorrect?)]')
+
+with st.expander("View suggested solution"):
+    code = '''
+	SELECT city, COUNT(id_cust)
+	FROM Customers;
     '''
     st.code(code, language="sql")
 
