@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title('Analytics with SQL')
+st.title('Data Analysis with SQL')
 
 st.divider()
 
